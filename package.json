@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "comments": "nodemon run start --preffix comments",
+    "bus": "nodemon run start --preffix eventBus",
+    "moderation": "nodemon run start --preffix moderation",
+    "posts": "nodemon run start --preffix posts",
+    "query": "nodemon run start --preffix query",
+    "dev": "concurrently \"npm run bus\" \"npm run moderation\" \"npm run comments\" \"npm run posts\" \"npm run query\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gtomsic/blog-microservices-basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gtomsic/blog-microservices-basic/issues"
+  },
+  "homepage": "https://github.com/gtomsic/blog-microservices-basic#readme",
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
